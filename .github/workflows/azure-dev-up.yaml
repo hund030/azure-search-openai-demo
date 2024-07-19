@@ -49,7 +49,7 @@ jobs:
       # https://github.com/Azure/azure-dev/issues/3920
       # To be removed once the issue is fixed
       - name: Create azd env
-        run: azd env new $env_name --no-prompt
+        run: azd env new $AZURE_ENV_NAME --no-prompt
         env:
           AZD_INITIAL_ENVIRONMENT_CONFIG: ${{ secrets.AZD_INITIAL_ENVIRONMENT_CONFIG }}
 
